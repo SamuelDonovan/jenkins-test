@@ -11,13 +11,13 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
+		sh 'make clean'
                 sh 'make test'
             }
         }
         stage('Deploy') {
             steps {
-		echo 'Deploying....'
-		error("example of an error")
+		echo 'Deploying...'
 		 }
         }
     }

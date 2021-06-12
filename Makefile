@@ -9,7 +9,9 @@ test:
 		@echo "Test Passed!"
 	@else
 		@echo "Test Failed!"
+		exit 1
 	@fi
 
 clean:
 	rm *.out
+
