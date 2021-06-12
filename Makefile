@@ -13,5 +13,7 @@ test:
 	@fi
 
 clean:
+	@if [ -f *.out ]
+	@then
 	rm *.out
-
+	@fi
