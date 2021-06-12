@@ -5,13 +5,13 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
+		sh 'make clean'
                 sh 'make build'
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing..'
-		sh 'make clean'
                 sh 'make test'
             }
         }
